@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 1200px;
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 34px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #FF6B00;
+}
+
+
+
+form {
+    background-color: #FFF8F2;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"], input[type="date"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+button {
+    width: 25%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    background-color: black;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FF6B00;
+}
+
+input:hover {
+    border-color: #FF6B00;
+}
+
+textarea:hover {
+    border-color: #FF6B00;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin:10px  0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #FF6B00;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #FFF8F2;
+}
+
+tr:hover {
+    background-color: #faf0e8;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.actions button {
+    padding: 5px 10px;
+    width: 100%;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.actions .edit {
+    background-color: black;
+    color: #fff;
+}
+
+.actions .edit:hover {
+    background-color: #FF6B00;
+}
+
+.actions .delete {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.actions .delete:hover {
+    background-color: #cc0000;
+}
+
+@media (max-width: 600px) {
+    body {
+        width: 600px;
+        height: 1200px;
+    }
+    .container {
+        width:74.4%;
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    th, td {
+        font-size: 14px;
+    }
+}
